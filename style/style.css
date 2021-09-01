@@ -1,0 +1,103 @@
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: var(--preta);
+  color: white;
+}
+header .container {
+  align-items: center;
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+header .logo {
+  padding: 5px 5px 5px 20px;
+  font-size: 40px;
+  font-family: "Arial Black", Times;
+  color: var(--vermelho);
+  margin-right: 30px;
+}
+
+header nav a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  color: white;
+}
+
+/*FILME PRINCIPAL*/
+.filme-principal{
+  font-size: 20px;
+  
+background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)100%),
+url(/img/flash-background.jpg);
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.titulo {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.filme-principal .container {
+  margin-top: 0;
+  margin-left: 20px;
+}
+
+.filme-principal .descricao {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  margin-bottom: 40px;
+  width: 60%;
+}
+
+/*Botões*/
+
+.botao {
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  margin-right: 15px;
+  border-radius: 8px;
+
+  cursor: pointer; /*Indica que o botão é clicável, aletarando o estado do cursor.*/
+  transition: 0.3s ease all;
+}
+
+.botao:hover {
+  background-color: white;
+  color: black;
+}
+
+.botao i {
+  margin-right: 7px;
+}
+
+
+/*Carrossel dos filmes*/
+
+.box-filme{
+  height: 80%;
+  width: 80%;
+  display: block;
+}
